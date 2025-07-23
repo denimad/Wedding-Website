@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  /* justify-content: space-between; */
+  /* flex-grow:1; */
+  align-items: center;
+  width: 100%;
+}
+.nav__side {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+.nav__side:first-child {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 2rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+}
+nav a:hover {
+  color: #0077cc;
+}
+.nav__list:last-child {
+  justify-content: flex-end;
+  flex: 0;
+  margin-right: 2rem;
+}
+.nav__list--primary {
+  margin: 0 auto;
+}
+#translate-btn {
+  background-color: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#translate-btn:hover {
+  background-color: #ddd;
+}
+
+.pic {
+  display: block;
+  max-width: 600px; /* Set the maximum width */
+  width: 100%; /* Make it responsive */
+  height: auto; /* Preserve proportions */
+  margin: 0 auto; /* Center it horizontally */
+  border-radius: 8px; /* rounded corners */
+}
+#landing img {
+  display: block;
+  max-width: 600px; /* Set the maximum width */
+  width: 100%; /* Make it responsive */
+  height: auto; /* Preserve proportions */
+  margin: 0 auto; /* Center it horizontally */
+  border-radius: 8px; /* rounded corners */
+}
+#landing {
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #f4f9f4, #fff); /* soft leafy tones */
+  text-align: center;
+}
