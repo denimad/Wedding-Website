@@ -34,6 +34,14 @@ header {
   align-items: center;
   width: 100%;
 }
+.nav__toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
 .nav__side {
   flex: 1;
   display: flex;
@@ -103,4 +111,31 @@ nav a:hover {
   padding: 4rem 1rem;
   background: linear-gradient(180deg, #f4f9f4, #fff); /* soft leafy tones */
   text-align: center;
+}
+@media (max-width: 768px) {
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__list--primary {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .nav__list--primary.show {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

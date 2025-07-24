@@ -105,3 +105,17 @@ document.getElementById("translate-btn").addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   applyTranslations(currentLang);
 });
+
+
+// hamburger menu
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("nav-toggle");
+  const navList = document.querySelector(".nav__list--primary");
+
+  if (toggleBtn && navList) {
+    toggleBtn.addEventListener("click", () => {
+      navList.classList.toggle("show");
+    });
+  }
+});
