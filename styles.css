@@ -47,11 +47,19 @@ header {
   display: flex;
   justify-content: flex-end;
   padding-right: 2rem;
+
+  align-items: center;
+  gap:1rem;
 }
-.nav__side:first-child {
+.nav__side--left {
   justify-content: flex-start;
-  padding-right: 0;
   padding-left: 2rem;
+}
+
+.nav__side--right {
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-right: 2rem;
 }
 nav ul {
   display: flex;
@@ -93,7 +101,7 @@ nav a:hover {
 
 .pic {
   display: block;
-  max-width: 600px; /* Set the maximum width */
+  max-width: 800px; /* Set the maximum width */
   width: 100%; /* Make it responsive */
   height: auto; /* Preserve proportions */
   margin: 0 auto; /* Center it horizontally */
@@ -101,7 +109,7 @@ nav a:hover {
 }
 #landing img {
   display: block;
-  max-width: 600px; /* Set the maximum width */
+  max-width: 800px; /* Set the maximum width */
   width: 100%; /* Make it responsive */
   height: auto; /* Preserve proportions */
   margin: 0 auto; /* Center it horizontally */
@@ -112,7 +120,26 @@ nav a:hover {
   background: linear-gradient(180deg, #f4f9f4, #fff); /* soft leafy tones */
   text-align: center;
 }
+
+.responsive-map {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 4 / 3; /* or 16 / 9 for wider */
+  height: auto;
+  display: block;
+}
+
 @media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items:stretch;
+  }
+  .nav__side{
+    width:100%;
+    justify-content: flex-end;
+    padding:0 1rem;
+    order:1;
+  }
   .nav__toggle {
     display: block;
   }
@@ -134,8 +161,5 @@ nav a:hover {
     display: flex;
   }
 
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  
 }

@@ -10,15 +10,7 @@
     <header>
       <div class="flex-row">
         <nav class="nav" aria-label="Main navigation">
-          <div class="nav__side"></div>
-          <button
-            class="nav__toggle"
-            aria-label="Toggle navigation"
-            id="nav-toggle"
-          >
-            &#9776;
-          </button>
-
+          <div class="nav__side nav__side--left"></div>
           <ul class="nav__list--primary">
             <li><a href="#landing" id="nav-home">Home</a></li>
             <li><a href="#location" id="nav-location">Location</a></li>
@@ -31,8 +23,17 @@
             <li><a href="#gifts" id="nav-gifts">Gifts</a></li>
             <li><a href="#rsvp" id="nav-rsvp">RSVP</a></li>
           </ul>
-          <div class="nav__side">
+
+          <div class="nav__side nav__side--right">
             <button id="translate-btn">Español</button>
+
+            <button
+              class="nav__toggle"
+              aria-label="Toggle navigation"
+              id="nav-toggle"
+            >
+              &#9776;
+            </button>
           </div>
         </nav>
       </div>
@@ -59,8 +60,7 @@
         </h3>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8147534134064!2d-99.2490289!3d18.939591999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdde24de7e253d%3A0xa5466a81264a24ec!2sLa%20Ca%C3%B1adita!5e0!3m2!1sde!2sde!4v1752769795329!5m2!1sde!2sde"
-          width="600"
-          height="450"
+          class="responsive-map"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
