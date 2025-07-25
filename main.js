@@ -106,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
   applyTranslations(currentLang);
 });
 
-
 // hamburger menu
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -116,6 +115,26 @@ document.addEventListener("DOMContentLoaded", function () {
   if (toggleBtn && navList) {
     toggleBtn.addEventListener("click", () => {
       navList.classList.toggle("show");
+    });
+
+    // Close menu when nav link is clicked (only after navList is confirmed)
+
+    const navLinks = navList.querySelectorAll("a");
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navList.classList.remove("show");
+      });
+    });
+
+    //  Close menu when clicking outside
+
+    document.addEventListener("click", (event) => {
+      const isClickInsideMenu = navList.contains(event.target);
+      const isClickOnToggle = toggleBtn.contains(event.target);
+
+      if (!isClickInsideMenu && !isClickOnToggle) {
+        navList.classList.remove("show");
+      }
     });
   }
 });

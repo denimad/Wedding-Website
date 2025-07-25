@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color:#7D3922;
+}
+body{
+  background-color: #F9F0E3;
+  
 }
 .flex {
   display: flex;
@@ -12,7 +17,7 @@
   text-align: center;
 }
 header {
-  background-color: #fff;
+  background-color: #F9F0E3;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -71,12 +76,12 @@ nav ul {
 }
 nav a {
   text-decoration: none;
-  color: #333;
+  /* color: #333; */
   font-weight: bold;
   font-size: 1rem;
 }
 nav a:hover {
-  color: #0077cc;
+  color:#C08A45;
 }
 .nav__list:last-child {
   justify-content: flex-end;
@@ -87,16 +92,46 @@ nav a:hover {
   margin: 0 auto;
 }
 #translate-btn {
-  background-color: #eee;
+
+  /* no border button */
+  /* background-color: none;
+  background:none;
   border: none;
   padding: 0.5rem 1rem;
   font-weight: bold;
   cursor: pointer;
   border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem; */
+
+/* pill button */
+   /* background-color: #F0DFCA;
+  color: #7D3922;
+  border: none;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 999px; /* pill shape */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease; */
+
+  /* border button */
+  background: none;
+  border: 2px solid #C08A45;
+  color: #7D3922;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 #translate-btn:hover {
-  background-color: #ddd;
+  /* background-color: none;
+  color:#C08A45; */
+   background-color: #C08A45;
+  color: #fff;
 }
 
 .pic {
@@ -117,7 +152,7 @@ nav a:hover {
 }
 #landing {
   padding: 4rem 1rem;
-  background: linear-gradient(180deg, #f4f9f4, #fff); /* soft leafy tones */
+  /* background: linear-gradient(180deg, #f4f9f4, #fff); soft leafy tones */
   text-align: center;
 }
 
@@ -147,7 +182,7 @@ nav a:hover {
   .nav__list--primary {
     display: none;
     flex-direction: column;
-    background-color: #fff;
+    background-color:#F9F0E3;
     position: absolute;
     top: 100%;
     left: 0;
@@ -163,3 +198,10 @@ nav a:hover {
 
   
 }
+
+
+/* background F9F0E3
+font : garmond
+h1 : color 3A1306
+
+rest of text, color 7D3922 */
