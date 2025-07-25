@@ -9,8 +9,13 @@ body{
   background-color: #F9F0E3;
   font-family: "Garamond", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+section {
+  margin: 3rem 0;
+  padding: 0 1rem;
+}
 h1 {
   color:#3A1306;
+   margin-bottom: 1.5rem;
 }
 .flex {
   display: flex;
@@ -145,6 +150,8 @@ nav a:hover {
   height: auto; /* Preserve proportions */
   margin: 0 auto; /* Center it horizontally */
   border-radius: 8px; /* rounded corners */
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 #landing img {
   display: block;
@@ -166,6 +173,8 @@ nav a:hover {
   aspect-ratio: 4 / 3; /* or 16 / 9 for wider */
   height: auto;
   display: block;
+  margin-top: 2rem;
+  
 }
 
 @media (max-width: 768px) {
