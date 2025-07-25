@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   color:#7D3922;
+  
 }
 body{
   background-color: #F9F0E3;
-  
+  font-family: "Garamond", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+h1 {
+  color:#3A1306;
 }
 .flex {
   display: flex;
@@ -179,7 +183,7 @@ nav a:hover {
     display: block;
   }
 
-  .nav__list--primary {
+  /* .nav__list--primary {
     display: none;
     flex-direction: column;
     background-color:#F9F0E3;
@@ -194,14 +198,38 @@ nav a:hover {
 
   .nav__list--primary.show {
     display: flex;
-  }
+  } */
+ .nav__list--primary {
+  flex-direction: column;
+  background-color: #F9F0E3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 0 1rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition:none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
 
-  
+.nav__list--primary.show {
+  padding: 1rem 1rem; /* restore padding when visible */
+  max-height: 500px; /* enough for all links */
+  opacity: 1;
+  pointer-events: auto;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+
 }
 
 
 /* background F9F0E3
 font : garmond
-h1 : color 3A1306
+h1 : color:3A1306;
 
 rest of text, color 7D3922 */
