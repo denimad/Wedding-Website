@@ -49,7 +49,7 @@ const translations = {
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore ipsa dolores praesentium, eligendi eum laboriosam aliquam natus tempora delectus hic, explicabo reiciendis nemo assumenda laborum optio suscipit commodi adipisci?",
     "rsvp-title": "RSVP",
     "rsvp-link": "Click here for RSVP.",
-    "translate-btn": "Español",
+    "translate-text": "ES",
   },
   es: {
     "page-title": "Boda de Denise y Ryan",
@@ -72,7 +72,7 @@ const translations = {
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore ipsa dolores praesentium, eligendi eum laboriosam aliquam natus tempora delectus hic, explicabo reiciendis nemo assumenda laborum optio suscipit commodi adipisci?",
     "rsvp-title": "Confirmación de asistencia",
     "rsvp-link": "Haz clic aquí para confirmar asistencia.",
-    "translate-btn": "English",
+    "translate-text": "EN",
   },
 };
 
@@ -85,13 +85,18 @@ function applyTranslations(lang) {
     if (el) {
       if (el.tagName === "TITLE") {
         document.title = entries[id];
-      } else if (el.tagName === "INPUT" || el.tagName === "BUTTON") {
-        el.value = entries[id];
-        el.textContent = entries[id]; // For <button>
       } else {
-        el.textContent = entries[id];
+        el.textContent = entries[id]; // Only touch text elements
       }
     }
+  }
+
+  // Swap the flag icon
+  const flagIcon = document.getElementById("flag-icon");
+  if (flagIcon) {
+    const nextLang = lang === "en" ? "es" : "en";
+    flagIcon.src = nextLang === "en" ? "images/us.png" : "images/mx.png";
+    flagIcon.alt = nextLang === "en" ? "US Flag" : "Mexican Flag";
   }
 }
 
@@ -105,6 +110,43 @@ document.getElementById("translate-btn").addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   applyTranslations(currentLang);
 });
+
+// function applyTranslations(lang) {
+//   const entries = translations[lang];
+//   for (const id in entries) {
+//     const el = document.getElementById(id);
+//     if (el) {
+//       if (el.tagName === "TITLE") {
+//         document.title = entries[id];
+//       } else if (el.tagName === "INPUT" || el.tagName === "BUTTON") {
+//         el.innerHTML = entries[id]; // For <button>
+//       } else {
+//         el.textContent = entries[id];
+//       }
+//     }
+//   }
+// }
+
+// let currentLang = "en";
+
+// const translateBtn = document.getElementById("translate-btn");
+// const flagIcon = translateBtn.querySelector("img");
+
+// document.getElementById("translate-btn").addEventListener("click", () => {
+//   currentLang = currentLang === "en" ? "es" : "en";
+//   applyTranslations(currentLang);
+//   if (currentLang === "en") {
+//     flagIcon.src = "images/us.png";
+//     flagIcon.alt = "US Flag";
+//   } else {
+//     flagIcon.src = "images/mx.png";
+//     flagIcon.alt = "Mexican Flag";
+//   }
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   applyTranslations(currentLang);
+// });
 
 // hamburger menu
 
