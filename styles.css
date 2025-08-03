@@ -115,7 +115,8 @@ nav a:hover {
   align-items:center;
   gap:0.5rem;
   display: flex;
-  margin-top:0.4rem;
+  margin-top:0.3rem;
+  -webkit-tap-highlight-color: transparent;
 
 /* pill button */
    /* background-color: #F0DFCA;
@@ -142,11 +143,16 @@ nav a:hover {
   align-items:center;
   gap:0.5rem; */
 }
+@media (hover: hover) {
+  #translate-btn:hover {
+    background-color: #C08A45;
+    color: #fff;
+  }
+}
 
-#translate-btn:hover {
-  /* background-color: none;
-  color:#C08A45; */
-   background-color: #C08A45;
+/* Touch devices: show highlight when tapping */
+#translate-btn:active {
+  background-color: #C08A45;
   color: #fff;
 }
 
@@ -230,7 +236,7 @@ nav a:hover {
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 #translate-btn{
-  margin-right:-1rem;
+  margin-right:-0.5rem;
   display: flex;
   align-items: center;
 }
