@@ -201,24 +201,9 @@ nav a:hover {
   }
   .nav__toggle {
     display: block;
+    margin:0;
   }
 
-  /* .nav__list--primary {
-    display: none;
-    flex-direction: column;
-    background-color:#F9F0E3;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 99;
-  }
-
-  .nav__list--primary.show {
-    display: flex;
-  } */
  .nav__list--primary {
   flex-direction: column;
   background-color: #F9F0E3;
@@ -237,14 +222,15 @@ nav a:hover {
 }
 
 .nav__list--primary.show {
-  padding: 1rem 1rem; /* restore padding when visible */
+  /* padding: 1rem 1rem; restore padding when visible */
   max-height: 500px; /* enough for all links */
   opacity: 1;
   pointer-events: auto;
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
-
-
+#translate-btn{
+  margin-right:-0.5rem;
+}
 }
 
 

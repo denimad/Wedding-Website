@@ -111,42 +111,6 @@ document.addEventListener("DOMContentLoaded", () => {
   applyTranslations(currentLang);
 });
 
-// function applyTranslations(lang) {
-//   const entries = translations[lang];
-//   for (const id in entries) {
-//     const el = document.getElementById(id);
-//     if (el) {
-//       if (el.tagName === "TITLE") {
-//         document.title = entries[id];
-//       } else if (el.tagName === "INPUT" || el.tagName === "BUTTON") {
-//         el.innerHTML = entries[id]; // For <button>
-//       } else {
-//         el.textContent = entries[id];
-//       }
-//     }
-//   }
-// }
-
-// let currentLang = "en";
-
-// const translateBtn = document.getElementById("translate-btn");
-// const flagIcon = translateBtn.querySelector("img");
-
-// document.getElementById("translate-btn").addEventListener("click", () => {
-//   currentLang = currentLang === "en" ? "es" : "en";
-//   applyTranslations(currentLang);
-//   if (currentLang === "en") {
-//     flagIcon.src = "images/us.png";
-//     flagIcon.alt = "US Flag";
-//   } else {
-//     flagIcon.src = "images/mx.png";
-//     flagIcon.alt = "Mexican Flag";
-//   }
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   applyTranslations(currentLang);
-// });
 
 // hamburger menu
 
