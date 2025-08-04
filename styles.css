@@ -17,6 +17,33 @@ h1 {
   color:#3A1306;
    margin-bottom: 1.5rem;
 }
+/* Body content links (including #location-text) */
+a {
+  color: #7D3922;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 3px; /* spacing */
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #C08A45;
+  /* keep underline on hover for consistency and clarity */
+}
+
+/* Navbar links - no underline, color change on hover */
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #C08A45;
+}
+
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -83,15 +110,7 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-nav a {
-  text-decoration: none;
-  /* color: #333; */
-  font-weight: bold;
-  font-size: 1rem;
-}
-nav a:hover {
-  color:#C08A45;
-}
+
 .nav__list:last-child {
   justify-content: flex-end;
   flex: 0;
@@ -185,6 +204,16 @@ nav a:hover {
   padding: 4rem 1rem;
   /* background: linear-gradient(180deg, #f4f9f4, #fff); soft leafy tones */
   text-align: center;
+}
+#location-text a {
+  font-weight: bold;
+  color: #3A1306; /* rich dark brown */
+  /* text-decoration: underline; <-- inherited from base 'a' */
+}
+
+#location-text a:hover {
+  color: #7D3922;
+  /* underline already shown by default */
 }
 
 .responsive-map {
