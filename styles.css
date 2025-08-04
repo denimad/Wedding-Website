@@ -52,6 +52,12 @@ nav a:focus {
   padding: 4rem 2rem;
   text-align: center;
 }
+.narrow {
+  max-width: 800px;
+  width: 50%;
+  margin: 0 auto;
+}
+
 header {
   background-color: #F9F0E3;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -68,6 +74,7 @@ header {
   padding: 2rem 0;
   text-align: center;
 }
+
 .nav {
   display: flex;
   /* justify-content: space-between; */
