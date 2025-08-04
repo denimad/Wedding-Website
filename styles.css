@@ -161,6 +161,8 @@ nav a:hover {
   width: auto;
   transform:translateY(-1px);
 }
+
+
 .pic {
   display: block;
   max-width: 800px; /* Set the maximum width */

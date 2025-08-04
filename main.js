@@ -38,8 +38,7 @@ const translations = {
     "nav-rsvp": "RSVP",
     "landing-title": "Welcome",
     "location-title": "Location",
-    "location-address":
-      "Av. Compositores 202, Analco, 62166 Cuernavaca, Mor., Mexico",
+    
     "schedule-title": "Schedule",
     "accommodations-title": "Accommodations",
     "accommodations-text":
@@ -61,8 +60,7 @@ const translations = {
     "nav-rsvp": "Confirmar Asistencia",
     "landing-title": "Bienvenido",
     "location-title": "Ubicación",
-    "location-address":
-      "Av. Compositores 202, Analco, 62166 Cuernavaca, Mor., México",
+    
     "schedule-title": "Programa",
     "accommodations-title": "Alojamiento",
     "accommodations-text":
