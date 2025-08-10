@@ -32,14 +32,14 @@ const translations = {
     "page-title": "Denise & Ryan Wedding",
     "nav-home": "Home",
     "nav-location": "Location",
-    "nav-schedule": "Schedule",
+    "nav-program": "Program",
     "nav-accommodations": "Accommodations",
     "nav-gifts": "Gifts",
     "nav-rsvp": "RSVP",
     "landing-title": "Welcome",
     "location-title": "Location",
     
-    "schedule-title": "Schedule",
+    "program-title": "Program",
     "accommodations-title": "Accommodations",
     "accommodations-text":
       "Some random English text for the translation test. How do you write this in Spanish? Yeah no idea.",
@@ -54,14 +54,14 @@ const translations = {
     "page-title": "Boda de Denise y Ryan",
     "nav-home": "Inicio",
     "nav-location": "Ubicación",
-    "nav-schedule": "Programa",
+    "nav-program": "Programa",
     "nav-accommodations": "Alojamiento",
     "nav-gifts": "Regalos",
     "nav-rsvp": "Confirmar Asistencia",
     "landing-title": "Bienvenido",
     "location-title": "Ubicación",
     
-    "schedule-title": "Programa",
+    "program-title": "Programa",
     "accommodations-title": "Alojamiento",
     "accommodations-text":
       "Un texto de prueba para traducir al español. ¿Cómo se dice esto en español? Ni idea.",
