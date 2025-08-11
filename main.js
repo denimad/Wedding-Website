@@ -45,7 +45,7 @@ const translations = {
     "gifts-title": "Gifts",
     
     "rsvp-title": "RSVP",
-    "rsvp-link": "Click here for RSVP.",
+    "rsvp-link": "Confirm your attendance here",
     "translate-text": "ES",
   },
   es: {

@@ -8,21 +8,33 @@
 body{
   background-color: #F9F0E3;
   font-family: "Garamond", "Palatino Linotype", "Book Antiqua", Palatino, serif;
-   font-size: 1.125rem;
+   font-size: 1.5rem;
+   font-weight: 400;
 }
 section {
   margin: 3rem 0;
   padding: 0 1rem;
 }
-h1 {
-  color:#3A1306;
-   margin-bottom: 1.5rem;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+p, ul, ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+li + li {
+  margin-top: 0.5rem;
 }
 /* Body content links (including #location-text) */
 a {
   color: #7D3922;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: underline;
   text-underline-offset: 3px; /* spacing */
   transition: color 0.3s ease;
@@ -257,6 +269,20 @@ nav ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* subtle shadow */
 }
 
+.illustrations {
+  display: block;            /* so margin auto works */
+  max-width:100%;          /* limits image size on big screens */
+  width: 100%;               /* responsive scaling */
+  height: auto;              /* keeps proportions */
+  margin: 1.5rem auto;       /* centers horizontally with space above/below */
+}
+.canadita-logo{
+  display: block;            /* so margin auto works */
+  max-width:40%;          /* limits image size on big screens */
+  width: 40%;               /* responsive scaling */
+  height: auto;              /* keeps proportions */
+  margin: 1.5rem auto;       /* centers horizontally with space above/below */
+}
 
 @media (max-width: 768px) {
   .nav {
