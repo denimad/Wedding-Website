@@ -41,11 +41,9 @@ const translations = {
     
     "program-title": "Program",
     "accommodations-title": "Accommodations",
-    "accommodations-text":
-      "Some random English text for the translation test. How do you write this in Spanish? Yeah no idea.",
+    
     "gifts-title": "Gifts",
-    "gifts-text":
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore ipsa dolores praesentium, eligendi eum laboriosam aliquam natus tempora delectus hic, explicabo reiciendis nemo assumenda laborum optio suscipit commodi adipisci?",
+    
     "rsvp-title": "RSVP",
     "rsvp-link": "Click here for RSVP.",
     "translate-text": "ES",
@@ -63,11 +61,9 @@ const translations = {
     
     "program-title": "Programa",
     "accommodations-title": "Alojamiento",
-    "accommodations-text":
-      "Un texto de prueba para traducir al español. ¿Cómo se dice esto en español? Ni idea.",
+    
     "gifts-title": "Regalos",
-    "gifts-text":
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempore ipsa dolores praesentium, eligendi eum laboriosam aliquam natus tempora delectus hic, explicabo reiciendis nemo assumenda laborum optio suscipit commodi adipisci?",
+    
     "rsvp-title": "Confirmación de asistencia",
     "rsvp-link": "Haz clic aquí para confirmar asistencia.",
     "translate-text": "EN",
