@@ -5,6 +5,7 @@
   color:#7D3922;
   
 }
+
 body{
   background-color: #F9F0E3;
   font-family: "Garamond", "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -138,6 +139,12 @@ nav ul {
 }
 .nav__list--primary {
   margin: 0 auto;
+   padding-left: 0;
+}
+.nav__list--primary li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 #translate-btn {
 
