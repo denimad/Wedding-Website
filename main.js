@@ -99,6 +99,7 @@ const translations = {
       <li><strong>Barong Tagalog</strong> — una prenda tradicional filipina hecha de tela ligera con bordados finos, perfecta para climas cálidos.</li>
       <li><strong>Guayabera</strong> — una camisa de lino o algodón, a menudo bordada, y también una excelente opción para un evento formal al aire libre.</li>
     `,
+    "dresscode-pinterest": "Para obtener más ideas e inspiración para atuendos, no dudes en consultar esto",
 
     "accommodations-title": "Alojamiento",
     "accommodations-intro": `
