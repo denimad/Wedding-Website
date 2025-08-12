@@ -27,7 +27,9 @@ p, ul, ol {
   margin-bottom: 1rem;
   line-height: 1.6;
 }
-
+li {
+  list-style: none;
+}
 li + li {
   margin-top: 0.5rem;
 }
@@ -163,31 +165,6 @@ nav ul {
   display: flex;
   margin-top:0.3rem;
   -webkit-tap-highlight-color: transparent;
-
-/* pill button */
-   /* background-color: #F0DFCA;
-  color: #7D3922;
-  border: none;
-  padding: 0.4rem 1rem;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 999px; /* pill shape */
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease; */
-
-  /* border button */
-  /* background: none;
-  border: 2px solid #C08A45;
-  color: #7D3922;
-  padding: 0.3rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  display:flex;
-  align-items:center;
-  gap:0.5rem; */
 }
 @media (hover: hover) {
   #translate-btn:hover {
