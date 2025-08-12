@@ -75,7 +75,8 @@ nav a:focus {
 }
 
 header {
-  background-color: #F9F0E3;
+  /* background-color: #F9F0E3; */
+  background-color: #fcf6ec;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -275,7 +276,7 @@ nav ul {
 
 #gifts-list li {
   padding: 1.5rem 1rem;
-  background-color: #fbf8f6; /* lighter than #f8f3ef main tone */
+  background-color: #fcf6ec; /* lighter than #f8f3ef main tone */
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   margin-bottom: 1.5rem;
@@ -310,7 +311,7 @@ nav ul {
 
  .nav__list--primary {
   flex-direction: column;
-  background-color: #F9F0E3;
+  background-color: #fcf6ec;;
   position: absolute;
   top: 100%;
   left: 0;
@@ -323,8 +324,11 @@ nav ul {
   transition:none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 99;
+  gap: 0.3rem;
 }
-
+.nav__list--primary li {
+    margin: 0.25rem 0; /* smaller vertical space */
+  }
 .nav__list--primary.show {
   /* padding: 1rem 1rem; restore padding when visible */
   max-height: 500px; /* enough for all links */
