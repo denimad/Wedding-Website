@@ -262,17 +262,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // animation for landing page
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero-container');
   const navbar = document.querySelector('header');
 
-  // Start fade-in animation
+  // Step 1: Fade in BW over sketch
   setTimeout(() => {
-    hero.classList.add('fade-in');
-  }, 300);
+    hero.classList.add('step-bw');
+  }, 300); // start after small delay
 
-  // Hide navbar at top, show on scroll down
+  // Step 2: Fade to color
+  setTimeout(() => {
+    hero.classList.add('step-color');
+  }, 2300); // ~2s after BW fade starts
+
+  // Navbar show/hide on scroll
   const updateNavbar = () => {
     if (window.scrollY > 0) {
       navbar.classList.remove('hidden');

@@ -88,20 +88,6 @@ header.hidden {
   
 }
 
-/* header {
-  background-color: #fcf6ec;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-header.hidden {
-  transform: translateY(-100%);
-  transition: transform 0.3s ease;
-} */
-
-
 .flex-row {
   display: flex;
   justify-content: space-between;
@@ -208,6 +194,11 @@ nav ul {
 }
 .hero-container img {
   object-fit: contain; /* or contain if you prefer seeing entire image */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 5s ease, filter 5s ease;
 }
 
 /* BW image defines height and scales to fit */
@@ -217,7 +208,8 @@ nav ul {
   height: 100%;
    /* keep aspect ratio, crop if needed */
   display: block;
-  transition: opacity 5s ease;
+   opacity: 1;
+  z-index: 1;
 }
 
 /* Color image stacked on top */
@@ -228,16 +220,21 @@ nav ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: filter 5s ease;
+  opacity: 0;
+  z-index: 2;
+   filter: grayscale(100%);
 }
 
-/* Start states */
-.bw { opacity: 1; }
-.color { filter: grayscale(100%); }
+/* Step 1: Fade in BW version of color image */
+.hero-container.step-bw .color {
+  opacity: 1;
+}
 
-/* Final states after fade-in */
-.hero-container.fade-in .bw { opacity: 0; }
-.hero-container.fade-in .color { filter: grayscale(0%); }
+/* Step 2: Remove grayscale → full color */
+.hero-container.step-color .color {
+  filter: grayscale(0%);
+}
+
 
 
 
@@ -431,11 +428,11 @@ nav ul {
 
 
 .bw {
-  animation: techno-flicker-bw 0.4s infinite steps(1);
+  animation: techno-flicker-bw 0.1s infinite steps(1);
 }
 
 .color {
-  animation: techno-flicker-color 0.4s infinite steps(1);
+  animation: techno-flicker-color 0.1s infinite steps(1);
 } */
 
 
