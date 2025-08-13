@@ -332,18 +332,56 @@ nav ul {
   margin-bottom: 0.5rem;
 }
 footer {
-  background-color: #fcf6ec; /* Same as navbar */
-  color: white;
-  padding: 1rem 0;
-  text-align: center;
+  background-color: #F9F0E3; /* same as navbar */
+  padding: 1.5rem 2rem;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
 }
 
 .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
+.footer-left,
+.footer-center,
+.footer-right {
+  font-family: "Garamond", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 0.85rem; /* subtle, uniform size */
+  color: #7D3922;
+}
+
+.footer-left a {
+  color: #7D3922;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 0.85rem; /* match surrounding text */
+}
+
+.footer-left a:hover,
+.footer-left a:focus {
+  color: #C08A45;
+}
+
+/* Back to top button */
+#back-to-top {
+  color: #7D3922; /* same as footer text */
+  background: none; /* remove background */
+  border: none; /* no border */
+  padding: 0; /* minimal padding */
+  font-size: 0.9rem; /* subtle size, same as footer text */
+  cursor: pointer;
+  text-decoration: none; /* remove underline */
+  transition: color 0.3s ease;
+}
+
+#back-to-top:hover {
+  color: #C08A45; /* subtle hover color, same tone as other links */
+}
 
 @media (max-width: 768px) {
    section{
@@ -407,6 +445,16 @@ footer {
   display: flex;
   align-items: center;
 }
+ .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin: 0.3rem 0;
+  }
 }
 @media (min-width: 1024px) {
   .hotel-pic {
