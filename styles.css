@@ -167,13 +167,6 @@ nav ul {
   margin-top:0.3rem;
   -webkit-tap-highlight-color: transparent;
 }
-@media (hover: hover) {
-  #translate-btn:hover {
-    background-color: #C08A45;
-    color: #fff;
-  }
-}
-
 /* Touch devices: show highlight when tapping */
 #translate-btn:active {
   background-color: #C08A45;
@@ -185,6 +178,44 @@ nav ul {
   width: auto;
   transform:translateY(-1px);
 }
+ /* landing pic animation */
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  overflow: hidden; /* crop any overflow */
+}
+
+/* BW image defines height and scales to fit */
+.bw {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keep aspect ratio, crop if needed */
+  display: block;
+  transition: opacity 3s ease;
+}
+
+/* Color image stacked on top */
+.color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 3s ease;
+}
+
+/* Start states */
+.bw { opacity: 1; }
+.color { filter: grayscale(100%); }
+
+/* Final states after fade-in */
+.hero-container.fade-in .bw { opacity: 0; }
+.hero-container.fade-in .color { filter: grayscale(0%); }
+
 
 
 .pic {
@@ -197,19 +228,7 @@ nav ul {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
-#landing img {
-  display: block;
-  max-width: 800px; /* Set the maximum width */
-  width: 100%; /* Make it responsive */
-  height: auto; /* Preserve proportions */
-  margin: 0 auto; /* Center it horizontally */
-  border-radius: 8px; /* rounded corners */
-}
-#landing {
-  padding: 4rem 1rem;
-  /* background: linear-gradient(180deg, #f4f9f4, #fff); soft leafy tones */
-  text-align: center;
-}
+
 #location-text a {
   font-weight: bold;
   color: #3A1306; /* rich dark brown */
@@ -348,11 +367,53 @@ nav ul {
     height: 18rem;
   }
 }
+@media (hover: hover) {
+  #translate-btn:hover {
+    background-color: #C08A45;
+    color: #fff;
+  }
+}
+/* .flicker-container {
+  position: relative;
+  display: block;          
+  margin: 2rem auto;       
+  width: 400px;             
+}
 
-/* background F9F0E3
-font : garmond
-h1 : color:3A1306;
 
-rest of text, color 7D3922 */
+.bw {
+  position: relative;       
+  display: block;
+  width: 100%;
+}
+
+
+.color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+@keyframes techno-flicker-bw {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+@keyframes techno-flicker-color {
+  0%, 50%, 100% { opacity: 0; }
+  25%, 75% { opacity: 1; }
+}
+
+
+.bw {
+  animation: techno-flicker-bw 0.4s infinite steps(1);
+}
+
+.color {
+  animation: techno-flicker-color 0.4s infinite steps(1);
+} */
+
 
 

@@ -259,3 +259,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// animation for landing page
+
+ window.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('.hero-container');
+    // small delay before fade starts (optional)
+    setTimeout(() => {
+      container.classList.add('fade-in');
+    }, 300); // start 0.3s after page load
+  });
