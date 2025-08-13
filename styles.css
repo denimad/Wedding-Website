@@ -330,6 +330,18 @@ nav ul {
   display: block;
   margin-bottom: 0.5rem;
 }
+footer {
+  background-color: #fcf6ec; /* Same as navbar */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 
 @media (max-width: 768px) {
