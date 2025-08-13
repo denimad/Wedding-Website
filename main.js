@@ -262,10 +262,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // animation for landing page
 
- window.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.hero-container');
-    // small delay before fade starts (optional)
-    setTimeout(() => {
-      container.classList.add('fade-in');
-    }, 300); // start 0.3s after page load
-  });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hero = document.querySelector('.hero-container');
+  const navbar = document.querySelector('header');
+
+  // Start fade-in animation
+  setTimeout(() => {
+    hero.classList.add('fade-in');
+  }, 300);
+
+  // Hide navbar at top, show on scroll down
+  const updateNavbar = () => {
+    if (window.scrollY > 0) {
+      navbar.classList.remove('hidden');
+    } else {
+      navbar.classList.add('hidden');
+    }
+  };
+
+  window.addEventListener('scroll', updateNavbar);
+  updateNavbar(); // initial check on page load
+});
+
