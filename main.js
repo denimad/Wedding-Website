@@ -262,28 +262,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // animation for landing page
 
-document.addEventListener('DOMContentLoaded', () => {
-  const hero = document.querySelector('.hero-container');
-  const navbar = document.querySelector('header');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const hero = document.querySelector('.hero-container');
+//   const navbar = document.querySelector('header');
 
-  // Step 1: Fade in BW over sketch
-  setTimeout(() => {
-    hero.classList.add('step-bw');
-  }, 300); // start after small delay
+//   // Step 1: Fade in BW over sketch
+//   setTimeout(() => {
+//     hero.classList.add('step-bw');
+//   }, 300); // start after small delay
 
-  // Step 2: Fade to color
-  setTimeout(() => {
-    hero.classList.add('step-color');
-  }, 2300); // ~2s after BW fade starts
+//   // Step 2: Fade to color
+//   setTimeout(() => {
+//     hero.classList.add('step-color');
+//   }, 2300); // ~2s after BW fade starts
 
-  // Navbar show/hide on scroll
-  const updateNavbar = () => {
-    if (window.scrollY > 0) {
-      navbar.classList.remove('hidden');
-    } else {
-      navbar.classList.add('hidden');
-    }
-  };
+//   // Navbar show/hide on scroll
+//   const updateNavbar = () => {
+//     if (window.scrollY > 0) {
+//       navbar.classList.remove('hidden');
+//     } else {
+//       navbar.classList.add('hidden');
+//     }
+//   };
 
   window.addEventListener('scroll', updateNavbar);
   updateNavbar(); // initial check on page load
