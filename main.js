@@ -99,14 +99,13 @@ const translations = {
       <li><strong>Barong Tagalog</strong> — una prenda tradicional filipina hecha de tela ligera con bordados finos, perfecta para climas cálidos.</li>
       <li><strong>Guayabera</strong> — una camisa de lino o algodón, a menudo bordada, y también una excelente opción para un evento formal al aire libre.</li>
     `,
-    "dresscode-pinterest": "Para obtener más ideas e inspiración para atuendos, no dudes en consultar esto",
+    "dresscode-pinterest": "Para más ideas e inspiración, puedes consultar nuestro ",
 
     "accommodations-title": "Alojamiento",
     "accommodations-intro": `
       Hemos preparado una selección de hoteles recomendados para tu estadía
       en Cuernavaca, todos ofreciendo tarifas especiales para nuestros invitados de boda.
-      El transporte al lugar también estará disponible desde estas
-      ubicaciones — ¡no olvides preguntar por ello al hacer el check‑in!
+      El transporte al lugar del evento también estará disponible desde estos hoteles — ¡no olvides preguntar por ello al hacer el check‑in!
     `,
     "hotel-cala-blanca-desc":
       "Este hotel boutique está más cerca del lugar — a solo 5 minutos caminando.",
@@ -147,7 +146,7 @@ const translations = {
       "Gracias por tu amor y apoyo — nos sentimos muy afortunados de celebrar este momento contigo.",
 
     "rsvp-title": "Confirmación de asistencia",
-    "rsvp-excited": "¡Estamos emocionados de celebrar contigo!",
+    "rsvp-excited": "¡No podemos esperar para celebrar contigo!",
     "rsvp-intro": `
       Para ayudarnos con la organización del evento, agradeceríamos mucho si
       pudieras confirmar tu asistencia haciendo clic en el enlace a continuación:
@@ -155,7 +154,7 @@ const translations = {
     "rsvp-link": "Confirma tu asistencia aquí",
     "rsvp-deadline":
       "<strong>Por favor confirma antes de enero de 2026</strong>",
-    "rsvp-thanks": "Gracias, ¡y estamos deseando verte!",
+    "rsvp-thanks": "Gracias ¡Los esperamos!",
   },
 };
 
@@ -265,11 +264,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero-container');
   const navbar = document.querySelector('header');
-
-  // // Step 1: Fade in BW over sketch
-  // setTimeout(() => {
-  //   hero.classList.add('step-bw');
-  // }, 300); // start after small delay
 
   // Step 2: Fade to color
   setTimeout(() => {

@@ -12,10 +12,12 @@ body{
    font-size: 1.3rem;
    font-weight: 400;
 }
+
 section {
   margin: 3rem 0;
   padding: 0 1rem;
 }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -27,12 +29,15 @@ p, ul, ol {
   margin-bottom: 1rem;
   line-height: 1.6;
 }
+
 li {
   list-style: none;
 }
+
 li + li {
   margin-top: 0.5rem;
 }
+
 /* Body content links (including #location-text) */
 a {
   color: #7D3922;
@@ -59,7 +64,6 @@ nav a:focus {
   color: #C08A45;
 }
 
-
 .flex {
   display: flex;
   flex-direction: column;
@@ -85,7 +89,6 @@ header {
 
 header.hidden {
   transform: translateY(-100%);
-  
 }
 
 .flex-row {
@@ -104,6 +107,7 @@ header.hidden {
   align-items: center;
   width: 100%;
 }
+
 .nav__toggle {
   display: none;
   font-size: 2rem;
@@ -235,9 +239,6 @@ nav ul {
   filter: grayscale(0%);
   opacity: 1;
 }
-
-
-
 
 .pic {
   display: block;
@@ -434,7 +435,6 @@ footer {
     margin: 0.25rem 0; /* smaller vertical space */
   }
 .nav__list--primary.show {
-  /* padding: 1rem 1rem; restore padding when visible */
   max-height: 500px; /* enough for all links */
   opacity: 1;
   pointer-events: auto;
@@ -468,47 +468,8 @@ footer {
     color: #fff;
   }
 }
-/* .flicker-container {
-  position: relative;
-  display: block;          
-  margin: 2rem auto;       
-  width: 400px;             
-}
 
 
-.bw {
-  position: relative;       
-  display: block;
-  width: 100%;
-}
-
-
-.color {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-
-@keyframes techno-flicker-bw {
-  0%, 50%, 100% { opacity: 1; }
-  25%, 75% { opacity: 0; }
-}
-
-@keyframes techno-flicker-color {
-  0%, 50%, 100% { opacity: 0; }
-  25%, 75% { opacity: 1; }
-}
-
-
-.bw {
-  animation: techno-flicker-bw 0.1s infinite steps(1);
-}
-
-.color {
-  animation: techno-flicker-color 0.1s infinite steps(1);
-} */
 
 
 
